@@ -10,12 +10,12 @@ function getTriangleArea(triangle: Triangle) {
   const area: number = Math.sqrt(
     p * (p - triangle.sideA) * (p - triangle.sideB) * (p - triangle.sideC)
   );
-  console.log(`Are of triangle is  ${area}`);
+  console.log(`Area of triangle is  ${area}`);
 }
 
 function getRectangleArea(rectangle: Rectangle) {
   const area: number = rectangle.sideA * rectangle.sideB;
-  console.log(`Are of Rectangle is  ${area}`);
+  console.log(`Area of Rectangle is  ${area}`);
 }
 
 export function getArea(shape: Circle | Triangle | Rectangle) {
