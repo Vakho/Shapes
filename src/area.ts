@@ -19,7 +19,15 @@ function getRectangleArea(rectangle: Rectangle) {
 }
 
 export function getArea(shape: Circle | Triangle | Rectangle) {
-  if (shape.type === Shapes.Circle) getCircleArea(shape);
-  if (shape.type === Shapes.Triangle) getTriangleArea(shape);
-  if (shape.type === Shapes.Rectangle) getRectangleArea(shape);
+  switch (shape.type) {
+    case Shapes.Circle:
+      getCircleArea(shape);
+      break;
+    case Shapes.Triangle:
+      getTriangleArea(shape);
+      break;
+    case Shapes.Rectangle:
+      getRectangleArea(shape);
+      break;
+  }
 }
